@@ -1,0 +1,11 @@
+#include <stdio.h>     //求三个数的平均数
+int main()
+{
+    printf("2023112059邬睿宇\n");
+
+    int a,b,c;
+    printf("请输入三个整数：");
+    scanf("%d %d %d",&a,&b,&c);
+    printf("平均数是：%.5f",(a+b+c)/3.0);   //3.0是浮点型，结果不会取整
+    return 0;
+}
