@@ -1,0 +1,15 @@
+#include <stdio.h>    //将摄氏温度转化成华氏温度
+int main()
+{
+    float C,F;
+    //C是摄氏温度
+    //F是华氏温度
+    
+    printf("2023112059邬睿宇\n");
+
+    printf("请输入摄氏温度：");
+    scanf("%f",&C);
+    F=C*9/5+32;
+    printf("华氏温度为：%.1f",F);
+    return 0;
+}
