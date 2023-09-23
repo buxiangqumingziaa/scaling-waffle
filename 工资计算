@@ -1,0 +1,13 @@
+#include <stdio.h>   //用于计算工资
+int main()
+{
+    printf("2023112059邬睿宇\n");
+    
+    float salary,a;   //salary表示工资，a表示销售货款
+    printf("工资计算方法：工资=2000+销售货款*18%% \n");
+    printf("请输入销售货款：");
+    scanf("%f",&a);
+    salary=2000+a*0.18;
+    printf("工资为：%.2f元",salary);
+    return 0;
+}
