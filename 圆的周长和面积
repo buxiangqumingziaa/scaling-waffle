@@ -1,0 +1,18 @@
+#include <stdio.h>   //输入圆的半径，输出圆的周长和面积
+#define pi 3.1415926
+int main()
+{
+    float r,l,s;
+    //r是半径
+    //l是周长
+    //s是面积
+    
+    printf("2023112059邬睿宇\n");
+
+    printf("请输入圆的半径：");
+    scanf("%f",&r);
+    l=r*2*pi;
+    s=pi*r*r;
+    printf("圆的周长为：%.4f,面积为：%.4f",l,s);
+    return 0;
+}
