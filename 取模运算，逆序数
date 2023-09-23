@@ -1,0 +1,28 @@
+#include <stdio.h>    //分离三位数的百位，十位，个位。计算逆序数。计算逆序数乘二
+int main()
+{
+    printf("2023112059邬睿宇\n");
+
+    int num,a,b,c,x;
+ /*
+num是输入的三位数
+a,b,c分别是百位，十位，个位
+x是逆序数
+ */
+    printf("请输入一个三位数：");
+    scanf("%d",&num);
+ 
+    a=num/100%10;
+    b=num/10%10;
+    c=num%10;               //以上为取模运算
+   
+    x=c*100+b*10+a;         //计算逆序数
+
+    printf("%d的百位是：%d\n",num,a);
+    printf("%d的十位是：%d\n",num,b);
+    printf("%d的个位是：%d\n",num,c);
+    printf("%d的逆序数是：%d\n",num,x);
+    printf("%d的逆序数乘以2是：%d\n",num,x*2);
+
+    return 0;
+}
