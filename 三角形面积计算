@@ -1,0 +1,21 @@
+#include <stdio.h>      //输入三角形三边长(要求整型)，判断能否组成三角形。若能则求三角形面积并输出，不能则输出相应信息。
+#include <math.h>
+int main()
+{
+    printf("2023112059邬睿宇\n");
+    int a,b,c;       //abc分别为三角形的三边长
+    printf("请分别输入三角形的三边长：");
+    scanf("%d %d %d",&a,&b,&c);
+    if (a+b>c)
+    {
+        float p,S1;       //p为三边之和的一半，S1为三角形的面积的开平方
+        p=(a+b+c)/2;
+        S1=p*(p-a)*(p-b)*(p-c);
+        printf("三角形的面积为：%lf",sqrt(S1));
+    }
+    else
+    {
+        printf("不能组成三角形");
+    }
+    return 0;
+}
